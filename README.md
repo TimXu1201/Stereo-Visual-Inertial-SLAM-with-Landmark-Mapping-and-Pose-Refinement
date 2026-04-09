@@ -1,6 +1,6 @@
 # Stereo Visual-Inertial SLAM with Landmark Mapping and Pose Refinement
 
-This repository contains my ECE 276A Project 3 work on **stereo visual-inertial SLAM**, combining IMU prediction, stereo landmark triangulation, map construction, and pose refinement.
+This repository contains my work on **stereo visual-inertial SLAM**, combining IMU prediction, stereo landmark triangulation, map construction, and pose refinement.
 
 The pipeline first predicts motion from IMU measurements, then recovers landmarks from stereo correspondences, and finally uses a fixed landmark map to improve the estimated trajectory through visual reprojection updates.
 
