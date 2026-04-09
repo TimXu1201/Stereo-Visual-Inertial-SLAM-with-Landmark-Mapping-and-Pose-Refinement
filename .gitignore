@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Raw course data
+data/
+
+# Generated numeric outputs
+code/outputs/**/*.npy
+
+# Local caches
+code/__pycache__/
+
+# Archives
+*.zip
