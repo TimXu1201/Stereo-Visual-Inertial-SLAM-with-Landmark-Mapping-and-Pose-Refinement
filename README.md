@@ -1,8 +1,8 @@
 # Stereo Visual-Inertial SLAM with Landmark Mapping and Pose Refinement
 
-This repository contains my work on **stereo visual-inertial SLAM**, combining IMU prediction, stereo landmark triangulation, map construction, and pose refinement.
+This repository presents a **stereo visual-inertial SLAM** workflow that combines IMU prediction, stereo landmark triangulation, landmark-map construction, and pose refinement.
 
-The pipeline first predicts motion from IMU measurements, then recovers landmarks from stereo correspondences, and finally uses a fixed landmark map to improve the estimated trajectory through visual reprojection updates.
+The implementation first predicts motion from IMU measurements, then recovers landmarks from stereo correspondences, and finally uses a fixed landmark map to improve the estimated trajectory through visual reprojection updates.
 
 ## Project Highlights
 
@@ -21,8 +21,8 @@ The pipeline first predicts motion from IMU measurements, then recovers landmark
   Helper functions for data loading, pose operations, and visualization.
 - `code/outputs/`
   Selected trajectory and landmark plots generated during development.
-- `276A_project3.pdf`
-  Project report.
+- `project_clarification.pdf`
+  Project Description.
 
 ## Environment
 
@@ -36,6 +36,6 @@ Typical dependencies:
 
 ## Notes
 
-- Raw course datasets under `data/` are excluded from the public repository.
-- Binary `.npy` intermediate outputs are ignored, while representative `.png` visualizations are kept.
-- The original code was developed with a local folder layout; place dataset files in the expected structure before rerunning the full pipeline.
+- Raw stereo and IMU datasets are not included in the public repository.
+- Binary `.npy` intermediate outputs are excluded, while representative `.png` visualizations are kept.
+- The current implementation expects a local folder layout for the dataset files before rerunning the full pipeline.
